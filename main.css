@@ -1,0 +1,111 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.limit__form__input {
+    width: 80px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+}
+.limit__form__input::-webkit-outer-spin-button,
+.limit__form__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.limit__form__button {
+    background-color: #003399;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.limit__form__label {
+    color: #039;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.navigation {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-bottom: 30px;
+    margin: 70px 0 0;
+}
+.bottom__pagination {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.arrow {
+    display: inline-block;
+    margin-left: 10px;
+}
+.wrapper {
+    width: 100%;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #039;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+table {
+    font-family: sans-serif;
+    font-size: 14px;
+    background: white;
+    min-width: 500px;
+    width: 1200px;
+    text-align: left;
+    border-spacing: 0;
+}
+.up {
+    transform: rotate(180deg);
+    display: inline-block;
+    margin-left: 10px;
+}
+th {
+    color: #039;
+    padding: 10px 8px;
+    font-weight: bold;
+    border: 1px solid #6678b1;
+}
+td {
+    color: #669;
+    padding: 9px 8px;
+    border: 1px solid #6678b1;
+}
+.sort__number {
+    width: 170px;
+    cursor: pointer;
+}
+@media (max-width: 1200px) {
+    .wrapper {
+        overflow-x: scroll;
+    }
+}
+@media (max-width: 767px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .limit {
+        margin-bottom: 20px;
+    }
+}
